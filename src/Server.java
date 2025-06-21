@@ -34,6 +34,13 @@ public class Server {
         }
     }
     public static void main(String[] args) {
+        try{
+            Server server = new Server();
+            server.startServer();
+            Socket socket = new Socket("localhost",1234);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
     }
 }
